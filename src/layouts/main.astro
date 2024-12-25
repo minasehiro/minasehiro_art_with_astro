@@ -8,11 +8,7 @@ const filename = Astro.url.pathname.split("/").filter(Boolean).pop() ?? ""
 const openGraphImage = !ogImage ? `/og/${filename}.png` : ogImage
 ---
 
-<BaseLayout
-  title={title}
-  description={description}
-  ogImage={openGraphImage}
->
+<BaseLayout title={title} description={description} ogImage={openGraphImage}>
   <main class="max-auto mb-10 w-full max-w-3xl">
     <Header />
     <Navigation />
