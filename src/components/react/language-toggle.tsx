@@ -4,9 +4,9 @@ export function LanguageToggle() {
   const handleLanguageToggle = () => {
     const currentPath = window.location.pathname
 
-    const newPath = currentPath.includes("/en")
-      ? currentPath.replace("/en", "/zh")
-      : currentPath.replace("/zh", "/en")
+    const newPath = currentPath.includes("/ja")
+      ? currentPath.replace("/ja", "/en")
+      : currentPath.replace("/en", "/ja")
 
     window.location.href = newPath
   }

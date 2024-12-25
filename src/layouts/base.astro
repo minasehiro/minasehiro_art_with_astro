@@ -3,7 +3,7 @@ import "~/styles/globals.css"
 import { NoiseBackground } from "~/components/react/noise-background"
 import { getLangFromUrl } from "~/i18n/utils"
 import { GoogleAnalytics } from "astro-google-analytics"
-import { en, zh } from "~/config"
+import { en, ja } from "~/config"
 import { ClientRouter } from "astro:transitions"
 
 const lang = getLangFromUrl(Astro.url)
@@ -13,7 +13,7 @@ const { title, description, ogImage } = Astro.props
 const ogImageURL = new URL(ogImage, Astro.site).href
 const permalink = new URL(Astro.url.pathname, Astro.site).href
 
-const config = lang === "zh" ? zh : en
+const config = lang === "ja" ? ja : en
 ---
 
 <!doctype html>

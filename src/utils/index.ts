@@ -20,9 +20,9 @@ export const formatDate = (
 
 export const getPostsByLocale = async (locale: string) => {
   const posts =
-    locale === "en"
-      ? await getCollection("enPosts")
-      : await getCollection("zhPosts")
+    locale === "ja"
+      ? await getCollection("jaPosts")
+      : await getCollection("enPosts")
   return posts.sort(
     (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   )

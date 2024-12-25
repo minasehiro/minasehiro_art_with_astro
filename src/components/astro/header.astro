@@ -2,18 +2,18 @@
 import { Rss } from "lucide-react"
 import { LanguageToggle } from "~/components/react/language-toggle"
 import { ThemeToggle } from "~/components/react/theme-toggle"
-import { en, zh } from "~/config"
+import { en, ja } from "~/config"
 import { getLangFromUrl } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
-const config = lang === "zh" ? zh : en
+const config = lang === "ja" ? ja : en
 ---
 
 <header class="flex h-24 w-full items-center justify-between">
   <a
     href="/"
     data-umami-event="site-name"
-    aria-label={`${config.siteName} - 首页`}
+    aria-label={`${config.siteName} - ホーム`}
   >
     <div class="text-2xl font-semibold">{config.siteName}</div>
   </a>

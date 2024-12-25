@@ -1,13 +1,24 @@
 export const languages = {
+  ja: "日本語",
   en: "English",
-  zh: "简体中文",
 }
 
-export const defaultLang = "en"
+export const defaultLang = "ja"
 
-export const langs = ["en", "zh"]
+export const langs = ["ja", "en"]
 
 export const ui = {
+  ja: {
+    "nav.home": "ホーム",
+    "nav.about": "プロフィール",
+    "nav.archive": "アーカイブ",
+    "nav.links": "リンク",
+    "blog.latest": "最近の記事",
+    "archive.title": "すべての記事",
+    "links.title": "リンク",
+    "tag.title": "タグ：",
+    "tag.no_posts": "記事が見つかりませんでした",
+  },
   en: {
     "nav.home": "Home",
     "nav.archive": "Archive",
@@ -18,16 +29,5 @@ export const ui = {
     "links.title": "My Friends",
     "tag.title": "Tag:",
     "tag.no_posts": "No posts found for tag",
-  },
-  zh: {
-    "nav.home": "首页",
-    "nav.about": "关于",
-    "nav.archive": "归档",
-    "nav.links": "友链",
-    "links.title": "朋友们",
-    "blog.latest": "近期文章",
-    "archive.title": "所有文章",
-    "tag.title": "标签：",
-    "tag.no_posts": "没有找到标签为的文章",
   },
 } as const

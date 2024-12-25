@@ -1,10 +1,10 @@
 ---
 import IntroContentEn from "~/config/en/intro.mdx"
-import IntroContentZh from "~/config/zh/intro.mdx"
+import IntroContentJa from "~/config/ja/intro.mdx"
 import { getLangFromUrl } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
-const IntroContent = lang === "zh" ? IntroContentZh : IntroContentEn
+const IntroContent = lang === "ja" ? IntroContentJa : IntroContentEn
 ---
 
 <div class="my-10">

@@ -1,12 +1,12 @@
 ---
-import { en, zh } from "~/config"
+import { en, ja } from "~/config"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const { home, archive, custom, links, about } =
-  lang === "zh" ? zh.navigation : en.navigation
+const { home, archive, links, about } =
+  lang === "ja" ? ja.navigation : en.navigation
 ---
 
 <div
@@ -38,20 +38,6 @@ const { home, archive, custom, links, about } =
         <p>{t("nav.archive")}</p>
       </a>
     )
-  }
-  {
-    custom?.map((tab) => (
-      <a
-        href={tab.link}
-        class="hover:underline hover:underline-offset-4"
-        target="_blank"
-        data-umami-event={`nav-${tab.label}`}
-        aria-label={tab.label}
-        title={tab.label}
-      >
-        <p>{tab.label}</p>
-      </a>
-    ))
   }
   {
     links && (

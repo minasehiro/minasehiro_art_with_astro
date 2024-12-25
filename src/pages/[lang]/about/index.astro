@@ -1,7 +1,7 @@
 ---
-import { en, zh } from "~/config"
+import { en, ja } from "~/config"
 import AboutContentEn from "~/config/en/about.mdx"
-import AboutContentZh from "~/config/zh/about.mdx"
+import AboutContentJa from "~/config/ja/about.mdx"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import { getLanguagePaths } from "~/utils/langs"
@@ -11,15 +11,14 @@ export function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url)
-const pageMeta = lang === "zh" ? zh.pageMeta : en.pageMeta
-const AboutContent = lang === "zh" ? AboutContentZh : AboutContentEn
+const pageMeta = lang === "ja" ? ja.pageMeta : en.pageMeta
+const AboutContent = lang === "ja" ? AboutContentJa : AboutContentEn
 ---
 
 <MainLayout
   title={pageMeta.about.title}
   description={pageMeta.about.description}
   ogImage={pageMeta.about.ogImage}
-  needComment={true}
 >
   <div class="prose max-w-3xl dark:prose-invert">
     <AboutContent />

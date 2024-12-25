@@ -1,6 +1,5 @@
 ---
 import { render } from "astro:content"
-import Comments from "~/components/astro/comments.astro"
 import { langs } from "~/i18n/ui"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
@@ -53,8 +52,4 @@ const { Content } = await render(post)
       }
     </div>
   </article>
-
-  <div class="my-10">
-    <Comments />
-  </div>
 </MainLayout>

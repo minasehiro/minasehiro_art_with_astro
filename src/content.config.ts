@@ -16,12 +16,12 @@ const enPostsCollection = defineCollection({
   schema: postSchema,
 })
 
-const zhPostsCollection = defineCollection({
-  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/posts/zh" }),
+const jaPostsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/posts/ja" }),
   schema: postSchema,
 })
 
 export const collections = {
   enPosts: enPostsCollection,
-  zhPosts: zhPostsCollection,
+  jaPosts: jaPostsCollection,
 }

@@ -23,11 +23,10 @@ A minimalism, personal blog theme for Astro.
 - [x] 🎨 Clean and minimalist design
 - [x] 📝 Markdown/MDX for content authoring
 - [x] 🏄‍♂️ SSG static rendering, SEO friendly
-- [x] 🌐 i18n support (EN/ZH)
+- [x] 🌐 i18n support (EN/JP)
 - [x] 🔗 Social media integration
 - [x] 📰 RSS feed & sitemap support
 - [x] 🛠️ Google analysis integration
-- [x] 💬 Commenting Integration (Twikoo)
 - [ ] 🔍 Local search functionality
 - [ ] 🎨 Enhance Transition and Animation
 - [ ] ...and more
@@ -44,7 +43,7 @@ A minimalism, personal blog theme for Astro.
 
 - Open `src/config/links.ts` and customize your site links
 
-- Open `src/config/zh(en)/about.mdx(intro.mdx、links.mdx)` and customize your pages content
+- Open `src/config/ja(en)/about.mdx(intro.mdx、links.mdx)` and customize your pages content
 
 ## Writing Content
 

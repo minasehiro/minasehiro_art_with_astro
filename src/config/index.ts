@@ -1,6 +1,6 @@
 import { Github, Twitter } from "lucide-react"
 
-export const defaultLanguage: string = "en"
+export const defaultLanguage: string = "ja"
 
 export const common = {
   domain: "https://astro-air.guoqi.dev",
@@ -25,57 +25,37 @@ export const common = {
   navigation: {
     home: true,
     archive: true,
-    custom: [
-      {
-        label: "CamLife",
-        link: "https://camlife.cn",
-      },
-    ],
     links: true,
     about: true,
   },
   latestPosts: 8,
-  comments: {
-    enabled: true,
-    twikoo: {
-      enabled: true,
-      // replace with your own envId
-      envId: import.meta.env.PUBLIC_TWIKOO_ENV_ID ?? "",
-    },
-  },
 }
 
-export const zh = {
+export const ja = {
   ...common,
-  siteName: "小孙同学",
+  siteName: "ポートフォリオ",
   meta: {
     ...common.meta,
-    title: "小孙同学",
-    slogan: "一个浪漫的理性主义者",
-    description: "读书、摄影、编程、旅行",
+    title: "ポートフォリオ",
+    slogan: "遠きに行くには必ず邇きよりす",
+    description: "プログラミング、写真",
   },
   navigation: {
     ...common.navigation,
-    custom: [
-      {
-        label: "影集",
-        link: "https://camlife.cn",
-      },
-    ],
   },
   pageMeta: {
     archive: {
-      title: "归档",
+      title: "アーカイブ",
       description: "小孙同学的所有文章",
       ogImage: "/images/page-meta/zh/archive.png",
     },
     links: {
-      title: "朋友们",
+      title: "リンク",
       description: "小孙同学的和他朋友们",
       ogImage: "/images/page-meta/zh/links.png",
     },
     about: {
-      title: "关于我",
+      title: "プロフィール",
       description: "小孙同学的自我介绍",
       ogImage: "/images/page-meta/zh/about.png",
     },
@@ -93,12 +73,6 @@ export const en = {
   },
   navigation: {
     ...common.navigation,
-    custom: [
-      {
-        label: "CamLife",
-        link: "https://camlife.cn",
-      },
-    ],
   },
   pageMeta: {
     archive: {
