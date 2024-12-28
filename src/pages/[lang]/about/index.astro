@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Image } from "astro:assets"
 import profileImageEn from "~/assets/images/profile_en.jpg"
 import profileImageJa from "~/assets/images/profile_ja.jpg"
 import LinkCard from "~/components/astro/link-card.astro"
@@ -26,7 +26,11 @@ const profileImage = lang === "ja" ? profileImageJa : profileImageEn
   description={pageMeta.about.description}
   ogImage={pageMeta.about.ogImage}
 >
-  <Image src={profileImage} alt="プロフィール写真" class="mx-auto w-56 h-56 object-cover rounded-full" />
+  <Image
+    src={profileImage}
+    alt="プロフィール写真"
+    class="mx-auto h-56 w-56 rounded-full object-cover"
+  />
   <div class="prose max-w-3xl dark:prose-invert">
     <AboutContent />
   </div>
