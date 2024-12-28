@@ -1,6 +1,6 @@
 ---
 title: "「Smart Talk AI」の開発を担当しました"
-author: "Hirotaka Iwasaki"
+author: "水瀬ひろ"
 description: "最先端のAI技術を活用した受付窓口サービス「Smart Talk AI」の開発をFlutterで担当しました。"
 ogImage: "/images/cover.png"
 pubDate: 2024-12-28

@@ -1,6 +1,6 @@
 ---
 title: "I Contributed to [Smart Talk AI] Development"
-author: "Hirotaka Iwasaki"
+author: "minasehiro"
 description: "I led the Flutter development for the cutting-edge AI reception service Smart Talk AI."
 ogImage: "/images/cover.png"
 pubDate: 2024-12-28
