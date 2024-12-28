@@ -8,7 +8,7 @@ export const common = {
     favicon: "/images/minasehiro.png",
     url: "https://minasehiro.art",
   },
-  googleAnalyticsId: "G-95HWQ3N4CF",
+  googleAnalyticsId: "G-R4YW72GP8T",
   social: [
     {
       icon: Twitter,
