@@ -12,7 +12,7 @@ import robotsTxt from "astro-robots-txt"
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  site: "https://astro-air.netlify.app",
+  site: "https://minasehiro.art",
   vite: {
     worker: {
       plugins: () => [],

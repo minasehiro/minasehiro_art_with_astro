@@ -1,97 +1,55 @@
-# Astro Air
+# 水瀬ひろ（minasehiro） / 岩﨑 弘幸 (Hirotaka Iwasaki) ポートフォリオ
 
-A minimalism, personal blog theme for Astro.
+日本語 | [English](#english)
 
-> If you find this project helpful, please consider giving it a star ⭐️
+## 日本語
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro/tiny.svg)](https://astro.build) [![Netlify Status](https://api.netlify.com/api/v1/badges/a4eb6e88-606d-4ea6-9a53-179e03a7e2ef/deploy-status)](https://app.netlify.com/sites/astro-air/deploys)
+このリポジトリは、水瀬ひろ（minasehiro）・岩﨑 弘幸 (Hirotaka Iwasaki) のポートフォリオサイトです。  
+フロントエンドフレームワークとして [Astro](https://astro.build/) を使用し、ホスティングには [Fly.io](https://fly.io/) を利用しています。
 
-<img style="border-radius: 10px;" src="https://cdn.jsdelivr.net/gh/sun0225SUN/astro-air/public/preview.png" alt="Astro Air">
+### 特徴
+- **Astro**: 高速・軽量な静的サイト生成フレームワーク
+- **Fly.io**: 簡単にスケーラブルなアプリをデプロイ・ホスト可能
 
-## Showcase
+### デプロイ方法
+1. リポジトリをクローン
+2. 必要であれば依存関係をインストール
+    ```bash
+    npm install
+    ```
+3. Astro を使ってビルド
+    ```bash
+    npm run build
+    ```
+4. Fly.io へデプロイ
+    ```bash
+    fly deploy
+    ```
 
-- [Astro Air](https://astro-air.guoqi.dev)
-- [Guoqi's blog](https://blog.sunguoqi.com)
-- ...
+## English
 
-> welcome to add your own blog to the list ❤️
+This repository hosts the portfolio site of **minasehiro (Hiro Minase)** and **Hirotaka Iwasaki**.  
+It is built with [Astro](https://astro.build/) and hosted on [Fly.io](https://fly.io/).
 
-## Features
+### Features
+- **Astro**: A fast and lightweight static site generator
+- **Fly.io**: Easily deploy and scale applications
 
-- [x] 🌓 Dark mode support
-- [x] 📱 Fully device responsive
-- [x] 🎨 Clean and minimalist design
-- [x] 📝 Markdown/MDX for content authoring
-- [x] 🏄‍♂️ SSG static rendering, SEO friendly
-- [x] 🌐 i18n support (EN/JP)
-- [x] 🔗 Social media integration
-- [x] 📰 RSS feed & sitemap support
-- [x] 🛠️ Google analysis integration
-- [ ] 🔍 Local search functionality
-- [ ] 🎨 Enhance Transition and Animation
-- [ ] ...and more
+### Deployment
+1. Clone this repository
+2. (Optional) Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Build with Astro:
+    ```bash
+    npm run build
+    ```
+4. Deploy to Fly.io:
+    ```bash
+    fly deploy
+    ```
 
-## Quick Start
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sun0225SUN/astro-air)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sun0225SUN/astro-air)
-
-## Configuration
-
-- Open `src/config/index.ts` and customize your site settings
-
-- Open `src/config/links.ts` and customize your site links
-
-- Open `src/config/ja(en)/about.mdx(intro.mdx、links.mdx)` and customize your pages content
-
-## Writing Content
-
-1. Create new blog posts in the `src/content/posts/` directory
-2. Use the following frontmatter template:
-
-```markdown
----
-title: "Your Post Title"
-description: "A brief description of your post"
-pubDate: YYYY-MM-DD
-updatedDate(optional): YYYY-MM-DD
-tags(optional): ["tag1", "tag2"]
-ogImage(optional): "cover image URL"
 ---
 
-Your content here...
-```
-
-## Update Theme
-
-```bash
-git remote add upstream https://github.com/sun0225SUN/astro-air
-
-git fetch upstream
-
-git merge upstream/main --allow-unrelated-histories
-
-```
-
-## Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
-
-```bash
-git clone https://github.com/sun0225SUN/astro-air
-
-cd astro-air
-
-pnpm install
-
-pnpm dev
-```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+© 2024 minasehiro / Hirotaka Iwasaki

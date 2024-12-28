@@ -1,7 +1,12 @@
 ---
+import { Image } from 'astro:assets'
+import profileImageEn from "~/assets/images/profile_en.jpg"
+import profileImageJa from "~/assets/images/profile_ja.jpg"
+import LinkCard from "~/components/astro/link-card.astro"
 import { en, ja } from "~/config"
 import AboutContentEn from "~/config/en/about.mdx"
 import AboutContentJa from "~/config/ja/about.mdx"
+import { links } from "~/config/links"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import { getLanguagePaths } from "~/utils/langs"
@@ -13,6 +18,7 @@ export function getStaticPaths() {
 const lang = getLangFromUrl(Astro.url)
 const pageMeta = lang === "ja" ? ja.pageMeta : en.pageMeta
 const AboutContent = lang === "ja" ? AboutContentJa : AboutContentEn
+const profileImage = lang === "ja" ? profileImageJa : profileImageEn
 ---
 
 <MainLayout
@@ -20,7 +26,12 @@ const AboutContent = lang === "ja" ? AboutContentJa : AboutContentEn
   description={pageMeta.about.description}
   ogImage={pageMeta.about.ogImage}
 >
+  <Image src={profileImage} alt="プロフィール写真" class="mx-auto w-56 h-56 object-cover rounded-full" />
   <div class="prose max-w-3xl dark:prose-invert">
     <AboutContent />
+  </div>
+  <h3 class="my-10 text-center text-xl font-bold">SNS</h3>
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+    {links.map((link) => <LinkCard {...link} />)}
   </div>
 </MainLayout>

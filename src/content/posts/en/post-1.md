@@ -1,25 +1,14 @@
 ---
-title: "My First Blog Post"
-pubDate: 2020-07-01
-description: "This is the first post of my new Astro blog."
-ogImage: "https://sunguoqi.com/me.png"
-author: "Astro Learner"
-image:
-  url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
-tags: ["astro", "blogging", "learning-in-public"]
+title: "I Have Launched My Personal Website"
+author: "Hirotaka Iwasaki"
+description: "A renewal of my personal website previously hosted on Next.js + Vercel"
+ogImage: "/images/cover.png"
+pubDate: 2024-12-27
+tags: ["astro", "fly", "personal website", "blog"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+I’ve just renewed my personal website. Until now, I’d been operating under the name “Minase Hiro,” but I decided to start using my real name, Hiroyuki Iwasaki, as well. Consequently, I’ve also changed the site name to reflect this update.
 
-## What I've accomplished
+Along with that, I migrated the site—which I had long been running on **Next.js + Vercel**—to a combination of [**Astro**](https://astro.build/) and [**Fly**](https://fly.io/). My goal is to achieve a simpler, lighter, and faster setup that requires less maintenance. I plan to continue making updates as needed and keep the site running smoothly.
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
-
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
-
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
-
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Thank you for your continued support!

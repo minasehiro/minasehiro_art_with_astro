@@ -3,29 +3,28 @@ import { Github, Twitter } from "lucide-react"
 export const defaultLanguage: string = "ja"
 
 export const common = {
-  domain: "https://astro-air.guoqi.dev",
+  domain: "https://minasehiro.art",
   meta: {
-    favicon: "/avatar.png",
-    url: "https://blog.sunguoqi.com",
+    favicon: "/images/minasehiro.png",
+    url: "https://minasehiro.art",
   },
-  googleAnalyticsId: "",
+  googleAnalyticsId: "G-95HWQ3N4CF",
   social: [
     {
       icon: Twitter,
       label: "X",
-      link: "https://x.com/sun0225SUN",
+      link: "https://x.com/minase_hiro",
     },
     {
       icon: Github,
       label: "GitHub",
-      link: "https://github.com/sun0225SUN",
+      link: "https://github.com/minasehiro",
     },
   ],
   rss: true,
   navigation: {
     home: true,
     archive: true,
-    links: true,
     about: true,
   },
   latestPosts: 8,
@@ -33,10 +32,10 @@ export const common = {
 
 export const ja = {
   ...common,
-  siteName: "ポートフォリオ",
+  siteName: "Portfolio",
   meta: {
     ...common.meta,
-    title: "ポートフォリオ",
+    title: "ポートフォリオサイト",
     slogan: "遠きに行くには必ず邇きよりす",
     description: "プログラミング、写真",
   },
@@ -46,30 +45,25 @@ export const ja = {
   pageMeta: {
     archive: {
       title: "アーカイブ",
-      description: "小孙同学的所有文章",
-      ogImage: "/images/page-meta/zh/archive.png",
-    },
-    links: {
-      title: "リンク",
-      description: "小孙同学的和他朋友们",
-      ogImage: "/images/page-meta/zh/links.png",
+      description: "すべての投稿",
+      ogImage: "/images/cover.png",
     },
     about: {
       title: "プロフィール",
-      description: "小孙同学的自我介绍",
-      ogImage: "/images/page-meta/zh/about.png",
+      description: "自己紹介",
+      ogImage: "/images/cover.png",
     },
   },
 }
 
 export const en = {
   ...common,
-  siteName: "Guoqi Sun",
+  siteName: "Portfolio",
   meta: {
     ...common.meta,
-    title: "Guoqi Sun",
-    slogan: "A Romantic Rationalist",
-    description: "Reading, Photography, Programming, Traveling",
+    title: "Portfolio Site",
+    slogan: "Even a thousand-mile journey begins with the first step.",
+    description: "Programming, Photography",
   },
   navigation: {
     ...common.navigation,
@@ -77,18 +71,13 @@ export const en = {
   pageMeta: {
     archive: {
       title: "All Posts",
-      description: "Here are Guoqi Sun's all posts",
-      ogImage: "/images/page-meta/en/archive.png",
-    },
-    links: {
-      title: "My Friends",
-      description: "Here are Guoqi Sun's friends",
-      ogImage: "/images/page-meta/en/links.png",
+      description: "Here are all posts",
+      ogImage: "/images/cover.png",
     },
     about: {
       title: "About Me",
-      description: "Here is Guoqi Sun's self-introduction",
-      ogImage: "/images/page-meta/en/about.png",
+      description: "Here is self-introduction",
+      ogImage: "/images/cover.png",
     },
   },
 }

@@ -1,5 +1,4 @@
 ---
-import { Rss } from "lucide-react"
 import { LanguageToggle } from "~/components/react/language-toggle"
 import { ThemeToggle } from "~/components/react/theme-toggle"
 import { en, ja } from "~/config"
@@ -13,25 +12,12 @@ const config = lang === "ja" ? ja : en
   <a
     href="/"
     data-umami-event="site-name"
-    aria-label={`${config.siteName} - ホーム`}
+    aria-label={`${config.siteName} - Home`}
   >
     <div class="text-2xl font-semibold">{config.siteName}</div>
   </a>
 
   <div class="flex items-center gap-6">
-    {
-      config.rss && (
-        <a
-          href="/atom.xml"
-          target="_blank"
-          data-umami-event="rss"
-          aria-label="RSS"
-          title="RSS"
-        >
-          <Rss />
-        </a>
-      )
-    }
     {
       config.social.map((social) => (
         <a

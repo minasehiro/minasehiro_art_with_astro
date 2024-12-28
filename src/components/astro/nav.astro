@@ -5,7 +5,7 @@ import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 
-const { home, archive, links, about } =
+const { home, archive, about } =
   lang === "ja" ? ja.navigation : en.navigation
 ---
 
@@ -36,19 +36,6 @@ const { home, archive, links, about } =
         title={t("nav.archive")}
       >
         <p>{t("nav.archive")}</p>
-      </a>
-    )
-  }
-  {
-    links && (
-      <a
-        href={`/${lang}/links`}
-        class="hover:underline hover:underline-offset-4"
-        data-umami-event="nav-links"
-        aria-label={t("nav.links")}
-        title={t("nav.links")}
-      >
-        <p>{t("nav.links")}</p>
       </a>
     )
   }

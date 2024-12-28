@@ -1,12 +1,14 @@
 ---
-title: My Second Blog Post
-author: Astro Learner
-description: "After learning some Astro, I couldn't stop!"
-image:
-  url: "https://docs.astro.build/assets/arc.webp"
-  alt: "The Astro logo on a dark background with a purple gradient arc."
-pubDate: 2020-07-08
-tags: ["astro", "blogging", "learning-in-public", "successes"]
+title: "I Contributed to [Smart Talk AI] Development"
+author: "Hirotaka Iwasaki"
+description: "I led the Flutter development for the cutting-edge AI reception service Smart Talk AI."
+ogImage: "/images/cover.png"
+pubDate: 2024-12-28
+tags: ["AI", "Flutter", "App Development"]
 ---
 
-After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+I was in charge of the Flutter development for [Smart Talk AI](https://mobilesmarttown.jp/smart-talk-ai/).  
+This service leverages advanced AI technology to provide a reception solution that tackles various challenges, including improving operational efficiency, mitigating labor shortages, and reducing costs, thereby supporting DX transformation.
+
+Smart Talk AI offers a reception experience that feels natural and seamless, as if you’re speaking to an actual person, while minimizing the risk of hallucination (incorrect responses).  
+It also supports multiple languages, delivering high-quality service to customers around the world.

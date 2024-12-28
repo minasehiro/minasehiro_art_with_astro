@@ -1,14 +1,23 @@
 export const links = [
   {
-    name: "Astro",
-    link: "https://astro.build",
-    description: "The web framework for content-driven websites",
-    avatar: "/links/astro.svg",
+    name: "Instagram",
+    link: "https://instagram.com/minasehiro",
+    descriptionEn: "I've shared many of the photos I've taken so far.",
+    descriptionJa: "これまで撮影してきた写真が公開されています。",
+    avatar: "/images/services/instagram.svg",
   },
   {
-    name: "Guoqi Sun",
-    link: "https://blog.sunguoqi.com",
-    description: "Try, fail, retry. That's the rhythm of growth.",
-    avatar: "https://assets.guoqi.dev/images/avatar.png",
+    name: "Zenn",
+    link: "https://zenn.dev/minasehiro",
+    descriptionEn: "I publish articles about Flutter and Rails.",
+    descriptionJa: "Flutter や Rails に関する記事を公開しています。",
+    avatar: "/images/services/zenn.svg",
+  },
+  {
+    name: "X(Twitter)",
+    link: "https://x.com/minase_hiro_",
+    descriptionEn: "I post about everything from work to my daily life.",
+    descriptionJa: "仕事のことから日常まで、様々なことをポストしています。",
+    avatar: "/images/services/x.svg",
   },
 ]
